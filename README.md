@@ -1,5 +1,5 @@
-# Project 2 Pitch Guidelines
-Project Description and Pitch Guidelines for SEIR SEA P2
+# Siren (name subject to change)
+Source for makeup reviews and ratings
 
 ---
 ## Project 2 Goals
@@ -10,19 +10,31 @@ In your second project you will create a full stack Express and Postgres app whi
 - *An Express server utilizing EJS/EJS layouts for UI design and styling.*
 - *Interaction with and inclusion of at least one API.*
 
-## Project 2 Pitch Guidelines
+## Project 2 Pitch 
 
-In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
-2. Tech stack you plan to use
-3. Simple wireframes
+1. Vamp
+2. Tech stack: HTML, CSS, EJS, JS, Bootstrap (maybe), Express, Sequelize & Node.js
+3. Simple wireframes (in image folder)
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
-6. Example of how to call/invoke your API, and a description of what data comes back. 
-7. MVP goals (x3-5)
-8. Stretch goals (x2-5)
-9. Any potential roadblocks?
+5. API: http://makeup-api.herokuapp.com/
+6. http://makeup-api.herokuapp.com/api/v1/products.json?
+     - brand=maybelline & 
+     - product_type=lipstick
+     - json data returned:
+     ![alt text]('/images/jsondatareturned.png')    
+7. MVP Goals:
+     - Allow users to make account
+     - Allow users to search by brand or product
+     - Allow users to rate/comment
+     - View of user profile should display their activity
+     - View of products should display rating/comments
+8. Stretch goals:
+     - Products page with type categories or brand categories
+     - Display youtube videos about product or link to them
+     - Display ratings from other sites (major stretch) 
+9. Roadblocks:  
+     - 
 
 ## How to get started
 1. **Fork and clone this repository.**
