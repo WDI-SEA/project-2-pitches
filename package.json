@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/s3m4nt/project-2-pitches#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "unirest": "^0.6.0"
   }
 }
