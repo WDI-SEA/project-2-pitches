@@ -76,6 +76,13 @@ Wireframe of Route + Pokemon
 
 <img width="500" src="Screen Shot 2021-06-08 at 1.38.17 PM.png">
 
+### POTENTIAL PITFALLS
+
+- Difficulty in rendering map in a satisfactory manner. May have to use Canvas API.
+
+- Difficulty linking routes to pokemon lists. Each route would most likely require its own table/model.
+
+- Difficulty chaining together axios requests. This would impact my ability to retrieve information on moves and locations, as well as other miscellaneous information that I would otherwise like to present in my show.ejs page.
 
 
 
