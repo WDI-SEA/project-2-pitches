@@ -2,7 +2,7 @@
 Source for makeup reviews and ratings
 
 ---
-## Project 2 Goals
+## Goals
 
 In your second project you will create a full stack Express and Postgres app which has:
 - *At least x2 models, and utilize and build at least one relationship between the two models.*
@@ -10,7 +10,7 @@ In your second project you will create a full stack Express and Postgres app whi
 - *An Express server utilizing EJS/EJS layouts for UI design and styling.*
 - *Interaction with and inclusion of at least one API.*
 
-## Project 2 Pitch 
+## Pitch 
 
 1. Vamp
 2. Tech stack: HTML, CSS, EJS, JS, Bootstrap (maybe), Express, Sequelize & Node.js
@@ -36,15 +36,6 @@ In your second project you will create a full stack Express and Postgres app whi
 8. Roadblocks:  
      - Routing
 
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart (good example [here](https://gk-hynes.github.io/restful-routes-chart/)).
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
       
 
 
