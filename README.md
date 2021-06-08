@@ -53,13 +53,30 @@ For an extended Pokedex, here are the features I would like to implement:
 Link to Miro Whiteboard: https://miro.com/app/board/o9J_lAVfpik=/
 
 In-game screenshot from Pokemon FireRed representing map.ejs page
+
 <img width="500" src="http://pokedream.com/games/fireleaf/worldmap/worldmap.png">
 
+
 Potential alternate map
+
 <img width="500" src="https://cdn2.bulbagarden.net/upload/thumb/2/25/LGPE_Kanto_Map.png/1200px-LGPE_Kanto_Map.png">
 
+
 Image of Route 1. Each route.ejs page would feature a similar view of the whole area, with a scrollable list below featuring all available pokemon.
+
 <img width="500" src="https://cdn2.bulbagarden.net/upload/1/1b/Kanto_Route_1_HGSS.png">
+
+
+Wireframe of Map
+
+<img width="500" src="Screen Shot 2021-06-08 at 1.38.06 PM.png">
+
+
+Wireframe of Route + Pokemon
+
+<img width="500" src="Screen Shot 2021-06-08 at 1.38.17 PM.png">
+
+
 
 
 
