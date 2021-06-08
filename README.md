@@ -45,6 +45,7 @@ In designing and building your project, you will start by forking and cloneing t
      - add clock to emphasize how often prices change
      - add cash target and track how much time it takes to get there
      - add section which displays what you can buy with one bitcoin at the current price via a secondary product price api
+     - add gamemode where it'll use past data to speed up price changes
 
 9. Any potential roadblocks?
      - frequency of prices updates
