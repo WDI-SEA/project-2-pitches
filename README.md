@@ -18,7 +18,7 @@ Tech -
 node.js, express/ejs, sequelize, bootstrap 
 
 ## Wireframe 
-![FreebieMe wireframe](boneyard-wireframe.png)
+![FreebieMe wireframe](freebieme-wire.png)
 
 ## API
 Mapbox API
