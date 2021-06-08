@@ -1,0 +1,22 @@
+{
+  "name": "project-2-pitches",
+  "version": "1.0.0",
+  "description": "Project Description and Pitch Guidelines for SEIR SEA P2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s3m4nt/project-2-pitches.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s3m4nt/project-2-pitches/issues"
+  },
+  "homepage": "https://github.com/s3m4nt/project-2-pitches#readme",
+  "dependencies": {
+    "unirest": "^0.6.0"
+  }
+}
