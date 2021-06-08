@@ -89,10 +89,10 @@ In your second project you will create a full stack Express and Postgres app whi
                 (can be customized to set all of Manhattan as 1 zone or just West side from 57th st. to 120th st. from 12th Av/Riverside to Central Park West)
             3. user can assign riders to 1 or multiple zones 
             4. when user imputs customer info, the app returns appropriate zone info and which rider to send it to
-        
-        7. Stretch goals (x2-5)
-            1. customer info is stored in a table with corresponding address(can be multiple addresses) 
+            5. customer info is stored in a table with corresponding address(can be multiple addresses) 
             each address has a value of 1 zone
+       
+        7. Stretch goals (x2-5)
             2. integration of auto detect for text messages, app listens on user side for incoming texts from 
             customer phone # 
             3. when text is recieved from customer phone number, the app auto generates the appropriate
