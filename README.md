@@ -20,7 +20,7 @@ In designing and building your project, you will start by forking and cloneing t
      -Sequelize, express, axios, and ejs
 3. Simple wireframes
      * Can be handdrawn, or with tool of your choice
-          ![layout wireframe](./untitled.jpg)
+          ![layout wireframe](/Untitled.jpg)
      * Example online tool: [Miro.com](https://miro.com/)
 5. API you plan to use
      -MealDB API
