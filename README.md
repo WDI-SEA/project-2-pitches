@@ -22,7 +22,7 @@ In your second project you will create a full stack Express and Postgres app whi
      - brand=maybelline & 
      - product_type=lipstick
      - json data returned:
-     ![alt text]('/images/jsondatareturned.png')    
+     ![alt text](/images/jsondatareturned.png)    
 6. MVP Goals:
      - Allow users to make account
      - Allow users to search by brand or product
