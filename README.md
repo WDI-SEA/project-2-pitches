@@ -13,16 +13,46 @@ In your second project you will create a full stack Express and Postgres app whi
 ## Project 2 Pitch Guidelines
 
 In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
+1. Name of your app: 
+
 2. Tech stack you plan to use
+     - HTML
+     - Vanilla CSS
+     - Javascript
+     - Express
+     - Postgress
+     - Sequelize
+
 3. Simple wireframes
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
+     ![alt text](wireframe.png)
+
 5. API you plan to use
+     - https://twelvedata.com/
+
 6. Example of how to call/invoke your API, and a description of what data comes back. 
+     - https://api.twelvedata.com/price?symbol=BTC/USD&exchange=Binance&apikey=#####
+     - this will bring back the current price of bitcoin
+
 7. MVP goals (x3-5)
+     - pull and display current crypto prices on page via api
+     - pull and display current user crypto and cash via postgres db
+     - have ability to purchase additional crypto with cash at current price
+
+
 8. Stretch goals (x2-5)
+     - add stocks
+     - add clock to emphasize how often prices change
+     - add cash target and track how much time it takes to get there
+     - add section which displays what you can buy with one bitcoin at the current price via a secondary product price api
+
 9. Any potential roadblocks?
+     - frequency of prices updates
+     - api request restriction of 8/minute (800/day)
+     - frequent updates to postgres db tables such as cash
+
+
 
 ## How to get started
 1. **Fork and clone this repository.**
