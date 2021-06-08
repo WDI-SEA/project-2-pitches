@@ -29,17 +29,16 @@ In designing and building your project, you will start by forking and cloneing t
      ![alt text](wireframe.png)
 
 5. API you plan to use
-     - https://twelvedata.com/
+     - https://financialmodelingprep.com/
 
 6. Example of how to call/invoke your API, and a description of what data comes back. 
-     - https://api.twelvedata.com/price?symbol=BTC/USD&exchange=Binance&apikey=#####
+     - https://financialmodelingprep.com/api/v3/quote/BTCUSD?apikey=#####
      - this will bring back the current price of bitcoin
 
 7. MVP goals (x3-5)
      - pull and display current crypto prices on page via api
      - pull and display current user crypto and cash via postgres db
      - have ability to purchase additional crypto with cash at current price
-
 
 8. Stretch goals (x2-5)
      - add stocks
@@ -49,7 +48,7 @@ In designing and building your project, you will start by forking and cloneing t
 
 9. Any potential roadblocks?
      - frequency of prices updates
-     - api request restriction of 8/minute (800/day)
+     - api request restrictions
      - frequent updates to postgres db tables such as cash
 
 
