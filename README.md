@@ -1,4 +1,4 @@
-# Siren (name subject to change)
+# Vamp (name subject to change)
 Source for makeup reviews and ratings
 
 ---
@@ -17,24 +17,24 @@ In your second project you will create a full stack Express and Postgres app whi
 3. Simple wireframes (in image folder)
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
-5. API: http://makeup-api.herokuapp.com/
-6. http://makeup-api.herokuapp.com/api/v1/products.json?
+4. API: http://makeup-api.herokuapp.com/
+5. http://makeup-api.herokuapp.com/api/v1/products.json?
      - brand=maybelline & 
      - product_type=lipstick
      - json data returned:
      ![alt text]('/images/jsondatareturned.png')    
-7. MVP Goals:
+6. MVP Goals:
      - Allow users to make account
      - Allow users to search by brand or product
      - Allow users to rate/comment
      - View of user profile should display their activity
      - View of products should display rating/comments
-8. Stretch goals:
+7. Stretch goals:
      - Products page with type categories or brand categories
      - Display youtube videos about product or link to them
      - Display ratings from other sites (major stretch) 
-9. Roadblocks:  
-     - 
+8. Roadblocks:  
+     - Routing
 
 ## How to get started
 1. **Fork and clone this repository.**
