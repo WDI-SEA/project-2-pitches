@@ -35,6 +35,7 @@ In designing and building your project, you will start by forking and cloneing t
     [] Instead of a list of spells in the spellbooks, use Bootstrap to do flip card animations
     [] Use Bootstrap Modals to allow for "homebrewing" of spells
     [] Add list of classes who can use the spells
+    [] Have a list of different spellbooks that the user created.
 9. Any potential roadblocks?
     * Keeping a user "signed in" while they traverse each page.
 
