@@ -76,6 +76,35 @@ Wireframe of Route + Pokemon
 
 <img width="500" src="Screen Shot 2021-06-08 at 1.38.17 PM.png">
 
+### REQUIRED LOCATIONS
+
+#### Citys & Towns
+- Pallet Town
+- Viridian City
+- Pewter City
+- Cerulean City
+- Vermilion City
+- Lavender Town
+- Celadon City
+- Fuchsia City
+- Saffron City
+- Cinnabar Island
+
+#### Areas of Interest
+- Cerulean Cave
+- Diglett's Cave
+- Mt. Moon
+- Pokemon Mansion
+- Pokemon Tower
+- Power Plant
+- Rock Tunnel
+- Safari Zone
+- Victory Road
+- Viridian Forest
+
+### Routes
+- 1 to 25
+
 ### POTENTIAL PITFALLS
 
 - Difficulty in rendering map in a satisfactory manner. May have to use Canvas API.
