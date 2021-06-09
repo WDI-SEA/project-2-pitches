@@ -50,7 +50,7 @@ Returns a json file.  Large object with objects and arrays inside
 8. Stretch goals (x2-5)
      - Style pages
      - Have each "Detail" page display pictures of that park
-     - Set up email/password login in stuff
+     - Use mapbox to display parks nearby
 
 9. Any potential roadblocks?
      - routes and calling correct ejs files
