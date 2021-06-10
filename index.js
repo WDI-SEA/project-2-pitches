@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-app.use('/park', require('./routes/park'))
+app.use('/', require('./routes/park'))
 
 
 app.listen(PORT, () => {

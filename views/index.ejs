@@ -2,12 +2,12 @@
     <h1 class="text-center">Find Your Park!</h1>
     <p class="text-center">
       <!-- <a href="/list">Favorites</a> -->
-    </p>
+    </p>=
 
 <h1>Find nearby state parks!</h1>
-<h3>Enter in your zipcode or state below</h3>
+<h3>Enter in your state below</h3>
 
-<form action="/list" method="GET">
+<form action="/list" method="POST">
     <div class="form-group">
       <label for="name">Your Name</label>
       <input type="text" class="form-control" id="name" name='name' required>
@@ -15,8 +15,8 @@
   
   
     <div class="form-group">
-      <label for="content">Enter zip code</label>
-      <textarea type="integer" class="form-control" id="zipcode" name="zipcode" required></textarea>
+      <label for="content">Enter 2 character state code</label>
+      <textarea type="text" class="form-control" id="stateCode" name="stateCode" required></textarea>
     </div>
   
     <input type="submit" class="btn btn-primary">
