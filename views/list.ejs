@@ -1,15 +1,29 @@
 <div id='firstInfo'>
-<h1>Park Name: <%= name %> </h1>
-<br />
-<h4>Location: <%= location %> </h4>
-<br />
+<% parks.forEach(park => { %>
+
+<h1>Park Name: <%= park.name %> </h1>
+
+<% park.addresses.forEach(address => { %>
 <h4>
-Address: <%= address %>
-         <%= address2 %>
-         <%= address3 %>
+Location: <%= address.line1 %>
+          <%= address.city %>
+          <%= address.stateCode %>
+          <%= address.postalCode %>
 </h4>
-<br />
-<h4> Entrance Fee: <%= entranceFee %> </h4>
-<br />
-<h4> Hours of Operation: <%= hours %> </h4>
+<% }) %>
+
+<% park.entranceFees.forEach(entranceFee => { %>
+<h4> 
+    Entrance Fee: <%= entranceFee.cost %> 
+                  <%= entranceFee.description %>
+</h4>
+<% }) %>
+
+<% park.operatingHours.forEach(operatingHour => { %>
+<h4> 
+    Hours of Operation: <%= operatingHour.description %>
+</h4>
+<% }) %>
+
+<% }) %>
 </div>
