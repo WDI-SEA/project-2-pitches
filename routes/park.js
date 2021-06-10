@@ -40,22 +40,38 @@ router.get('/detail', (req, res) => {
    .catch(error => console.log(error))
 });
 
+// GET route /favorite to display list
+router.get('/favorite', (req, res) => {
+    // Get all records from the DB of pokemons
+    db.favorite.findAll()
+      .then(result => {
+        // render pokemon/index.ejs with returned pokemon data
+        res.render('favorite', {favorites: result})
+      })
+  })
+
 // GET/DELETE display user favorites, let them be able to delete from fav list
-// router.get('/:favorite', (req, res) => {
-//     let parkFav = req.query.name
+router.post('/favorite', (req, res) => {
+    // Get form data
+    let name = req.body.name
+    console.log(name)
+  
+    // add a new record to DB
+    db.favorite.findOrCreate({
+      where: {
+        name: name
+    }})
+      .then((data) => {
+          // redirect back to favorites page
+          console.log(data)
+          res.redirect('/favorite')
+      })
+      .catch((err) => {
+        console.log(`uh oh we found an err: ${err}`)
+      })
+  });
 
-//     let parkURL =`https://developer.nps.gov/api/v1/parks?q=${parkName}&api_key=${park}`
-//     axios.get(parkURL)
-//     .then((apiResponse) => {
-//         const pF= apiResponse.data.data
-//         // res.render(parks)
-    
-//         res.render('favorite', {pF})
-
-//     })
-//    .catch(error => console.log(error))
-// });
-
+  
 
 
 module.exports = router
