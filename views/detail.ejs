@@ -1,0 +1,25 @@
+<% parkDets.forEach(parkDet => { %>
+
+<h1> <%= parkDet.name %> </h1>
+<br />
+<h4>Park Facts:</h4>
+<p> <%= parkDet.description %> </p>
+<br />
+<h4>Fun Park Activites:</h4>
+<% parkDet.activities.forEach(activity => { %>
+<p>
+   <%= activity.name %>
+</p>
+<% }) %> 
+<br />
+<h4>Fun Park Topics:</h4>
+<% parkDet.topics.forEach(topic => { %>
+<p>
+    <%= topic.name %>
+</p>
+<% }) %>
+<br />
+<h4>Park Directions: </h4>
+<p> <%= parkDet.directionsInfo %> </p>
+
+<% }) %>

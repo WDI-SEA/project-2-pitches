@@ -1,8 +1,9 @@
 <div id='firstInfo'>
 <h1>List of State Parks</h1>
+
 <h3>~There may be multiple fees listed under a park.  Read the description to verify your cost~</h3>
 <% parks.forEach(park => { %>
-
+    
 <h1>Park Name: <%= park.name %> </h1>
 
 <% park.addresses.forEach(address => { %>
@@ -26,6 +27,11 @@ Location: <%= address.line1 %>
     Hours of Operation: <%= operatingHour.description %>
 </h4>
 <% }) %>
-
+  <form method="GET" action="/detail">
+    <input hidden type="text" name="name" id='name' value="<%= park.name %>">
+    <button class="btn btn-primary" type="submit">More Park Facts</button>
+  </form>
 <% }) %>
+
+
 </div>

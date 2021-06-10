@@ -5,7 +5,7 @@ const axios = require('axios')
 const park = process.env.PARK
 
 
-// GET /list display parks based off zipcode, redirect to detail page
+// POST/list display parks based off zipcode, redirect to detail page
 router.post('/list', (req, res) => {
     let stateCode = req.body.stateCode
 
@@ -21,9 +21,23 @@ router.post('/list', (req, res) => {
    .catch(error => console.log(error))
 });
 
-// POST detail page, user can add to favorites, redirect to favorite page
+// GET detail page, user can add to favorites, redirect to favorite page
 
+router.get('/detail', (req, res) => {
+    let parkName = req.query.name
+    console.log(parkName)
 
+    let parkURL =`https://developer.nps.gov/api/v1/parks?q=${parkName}&api_key=${park}`
+    axios.get(parkURL)
+    .then((apiResponse) => {
+        const parkDets= apiResponse.data.data
+        
+    
+        res.render('detail', {parkDets})
+
+    })
+   .catch(error => console.log(error))
+});
 
 // GET/DELETE display user favorites, let them be able to delete from fav list
 
