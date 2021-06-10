@@ -24,13 +24,14 @@ router.post('/list', (req, res) => {
 // GET detail page, user can add to favorites, redirect to favorite page
 
 router.get('/detail', (req, res) => {
-    let parkName = req.query.name
-    console.log(parkName)
+    let parkCode = req.query.parkCode
+    console.log(parkCode)
 
-    let parkURL =`https://developer.nps.gov/api/v1/parks?q=${parkName}&api_key=${park}`
+    let parkURL =`https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${park}`
     axios.get(parkURL)
     .then((apiResponse) => {
         const parkDets= apiResponse.data.data
+        console.log(parkDets)
         
     
         res.render('detail', {parkDets})
@@ -40,7 +41,20 @@ router.get('/detail', (req, res) => {
 });
 
 // GET/DELETE display user favorites, let them be able to delete from fav list
+// router.get('/:favorite', (req, res) => {
+//     let parkFav = req.query.name
 
+//     let parkURL =`https://developer.nps.gov/api/v1/parks?q=${parkName}&api_key=${park}`
+//     axios.get(parkURL)
+//     .then((apiResponse) => {
+//         const pF= apiResponse.data.data
+//         // res.render(parks)
+    
+//         res.render('favorite', {pF})
+
+//     })
+//    .catch(error => console.log(error))
+// });
 
 
 
