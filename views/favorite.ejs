@@ -2,7 +2,11 @@
 <h3>
     <% favorites.forEach(favorite => { %>
     <li> <%= favorite.name %>  </li> 
+    <form method="POST" action="/favorite<%= favorite %>/?_method=DELETE">
+        <input type="submit" value="Delete">
+      </form>
     <% }) %> 
+    
 </h3>
 </ul>
 

@@ -71,7 +71,13 @@ router.post('/favorite', (req, res) => {
       })
   });
 
-  
+  router.delete('/favorite/:name', (req, res) => {
+    res.send(req.params.favorite)
+
+    
+    // redirect to /favorites
+    res.redirect('/favorite')
+  })  
 
 
 module.exports = router
