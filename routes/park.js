@@ -72,11 +72,25 @@ router.post('/favorite', (req, res) => {
   });
 
   router.delete('/favorite/:name', (req, res) => {
-    res.send(req.params.favorite)
-
+    //access db for park info
+    // use 'include db.user' to access specific user's park db
+    // .then db.favorite.destroy where name is req.body.name
+    console.log(req.params)
+    db.favorite.destroy({
+      where: {
+        name: req.params.name
+      }
+    })
+    .then ((data) => {
+      console.log('The task has been done 😈')
+      // . then res.redirect('back') (this will reload the page)
+     res.redirect('/favorite')
+    })
+    .catch((err) => {
+      console.log(`Mayday mayday! We are going down!! 🛩  ${err}`)
+    })
     
-    // redirect to /favorites
-    res.redirect('/favorite')
+    
   })  
 
 
