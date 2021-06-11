@@ -3,7 +3,7 @@
   <div class="form-group">
     <% favorites.forEach(favorite => { %>
       <li> <%= favorite.name %>  </li>  
-    <form method="POST" action="/favorite/<%= favorite %>/?_method=DELETE">
+    <form method="POST" action="/favorite/<%= favorite.name %>/?_method=DELETE">
         <input type="submit" value="Delete" class='btn btn-primary'>
       </form>
     <% }) %> 

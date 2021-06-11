@@ -89,8 +89,6 @@ router.post('/favorite', (req, res) => {
     .catch((err) => {
       console.log(`Mayday mayday! We are going down!! 🛩  ${err}`)
     })
-    
-    
   })  
 
 
