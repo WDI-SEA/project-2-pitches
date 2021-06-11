@@ -7,7 +7,13 @@ const park = process.env.PARK
 
 // POST/list display parks based off zipcode, redirect to detail page
 router.post('/list', (req, res) => {
+    let currentUser = req.body.name
     let stateCode = req.body.stateCode
+
+    db.user.findOrCreate({
+      where: {
+        name: currentUser
+    }})
 
     let parkURL =`https://developer.nps.gov/api/v1/parks?stateCode=${stateCode}&sort=&api_key=${park}`
     axios.get(parkURL)
@@ -15,7 +21,8 @@ router.post('/list', (req, res) => {
         const parks= apiResponse.data.data
         // res.render(parks)
     
-        res.render('list', {parks})
+        res.render('list', {parks, currentUser})
+        
 
     })
    .catch(error => console.log(error))
@@ -90,6 +97,11 @@ router.post('/favorite', (req, res) => {
       console.log(`Mayday mayday! We are going down!! 🛩  ${err}`)
     })
   })  
+
+  // GET logout route
+router.get('/logout', (req, res) => {
+  res.render('index', {logout: true})
+})
 
 
 module.exports = router

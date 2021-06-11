@@ -1,5 +1,24 @@
 <div id='firstInfo'>
-<h1>List of State Parks</h1>
+  <h1 id='user'></h1>
+
+  <script>
+    if (!localStorage.getItem('user')) {
+        let user = "<%- currentUser %>"
+        localStorage.setItem('user', user)
+    }
+    
+    let currentUser = localStorage.getItem('user')
+    console.log(`User logged in: ${currentUser}`)
+  </script>
+
+  <script>
+    document.getElementById('user').innerText = `Hello, ${currentUser}, here are your local national parks!`
+    document.getElementById('userInput').value = currentUser
+    console.log(`User logged in: ${currentUser}`)
+  </script>
+
+
+<h2>List of National Parks in your state</h2>
 
 <h3>~There may be multiple fees listed under a park.  Read the description to verify your cost~</h3>
 <% parks.forEach(park => { %>
@@ -31,6 +50,7 @@ Location: <%= address.line1 %>
     <input hidden type="text" name="parkCode" id='name' value="<%= park.parkCode %>">
     <button class="btn btn-primary" type="submit">More Park Facts</button>
   </form>
+
 <% }) %>
 
 
