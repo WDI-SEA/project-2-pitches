@@ -49,10 +49,10 @@ router.get('/detail', (req, res) => {
 
 // GET route /favorite to display list
 router.get('/favorite', (req, res) => {
-    // Get all records from the DB of pokemons
+    // Get all records from the DB of favorites
     db.favorite.findAll()
       .then(result => {
-        // render pokemon/index.ejs with returned pokemon data
+        // render favorite's list
         res.render('favorite', {favorites: result})
       })
   })
