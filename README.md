@@ -8,34 +8,31 @@
 - Sequelize
 - CSS - Boostrap
 
-Users - model 
-
-Categories of what is available - model 
-
-location (by zip) - of item - model
 
 Tech - 
-node.js, express/ejs, sequelize, bootstrap 
+Node.js, Express/ejs, Sequelize, Bootstrap 
 
 ## Wireframe 
 ![FreebieMe wireframe](freebieme-wire.png)
 
 ## API
-Mapbox API
-https://www.mapbox.com/
+Cloudinary API
+https://cloudinary.com/
 
-## Example
 
 ## MVP
 - Have a user signup where you store them in a model
-- Create categories of items you can offer (model)
+- Create post of items offered per user (model)
+- Upload image of item saved with Cloudinary
 - Keep users location by their zip
-- Allow guest to search by item they are looking for to see if it matches what is     offered. And match by location as well.
-- Allow user/guest to see all items being offered by location
+- Allow user/guest to see all items being offered by location or category
 
 ## Stretch Goals
-
-
+- Allow guest to search by item they are looking for to see if it matches what is     offered. And match by location as well.
+- Tie location to user and user search with Mapbox.
+- Print map. 
+- Mapbox API
+- https://www.mapbox.com/
 
 
 # Project 2 Pitch Guidelines
