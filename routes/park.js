@@ -60,23 +60,48 @@ router.get('/favorite', (req, res) => {
 // GET/DELETE display user favorites, let them be able to delete from fav list
 router.post('/favorite', (req, res) => {
     // Get form data
+   
     let name = req.body.name
     console.log(name)
-  
     // add a new record to DB
-    db.favorite.findOrCreate({
+  
+//     db.favorite.findOrCreate({
+//       where: {
+//         name: name
+//     }})
+//      .then((data) => {
+//           // redirect back to favorites page
+//           res.redirect('/favorite')
+//       })
+//       .catch((err) => {
+//         console.log(`uh oh we found an err: ${err}`)
+//       })
+// })
+ db.favorite.findOrCreate({
+  where: {
+    name: name
+}})
+
+async function addPark() {
+  try {
+    const user = await db.user.findOne()
+
+    const findPark = await user.createFavorite({
       where: {
         name: name
-    }})
-      .then((data) => {
-          // redirect back to favorites page
-          console.log(data)
-          res.redirect('/favorite')
-      })
-      .catch((err) => {
-        console.log(`uh oh we found an err: ${err}`)
-      })
-  });
+      }
+    })
+    
+    await user.addPark(findPark)
+  } catch (error) {
+    console.log('🆘 we have an error')
+  }
+}
+res.redirect('/favorite')
+addPark()
+})
+
+
 
   router.delete('/favorite/:name', (req, res) => {
     //access db for park info
