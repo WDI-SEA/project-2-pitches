@@ -79,7 +79,7 @@ router.post('/favorite', async (req, res) => {
           name: name
         }
       })
-      await user.addFavorite(newPark[1])
+      await user.addFavorite(newPark[0])
       // user.createFavorite({
       //   name: name
       // })
