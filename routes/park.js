@@ -32,16 +32,17 @@ router.post('/list', (req, res) => {
 
 router.get('/detail', (req, res) => {
     let parkCode = req.query.parkCode
+    let currentUser = db.user.findOne()
     console.log(parkCode)
 
     let parkURL =`https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${park}`
     axios.get(parkURL)
     .then((apiResponse) => {
         const parkDets= apiResponse.data.data
-        console.log(parkDets)
+        console.log(parkDets, currentUser)
         
     
-        res.render('detail', {parkDets})
+        res.render('detail', {parkDets, currentUser})
 
     })
    .catch(error => console.log(error))
@@ -61,8 +62,8 @@ router.get('/favorite', (req, res) => {
 router.post('/favorite', (req, res) => {
     // Get form data
    
-    let name = req.body.name
-    console.log(name)
+    // let name = req.body.name
+    // console.log(name)
     // add a new record to DB
   
 //     db.favorite.findOrCreate({
@@ -77,22 +78,31 @@ router.post('/favorite', (req, res) => {
 //         console.log(`uh oh we found an err: ${err}`)
 //       })
 // })
- db.favorite.findOrCreate({
-  where: {
-    name: name
-}})
+//let name = req.body.name
+//  db.favorite.findOrCreate({
+//   where: {
+//     name: name 
+// }})
 
 async function addPark() {
   try {
-    const user = await db.user.findOne()
+    let name = req.body.name
 
-    const findPark = await user.createFavorite({
+    const user = await db.user.findOne()
+    console.log(user)
+
+    const park = await db.favorite.findOrCreate({
       where: {
         name: name
       }
     })
-    
-    await user.addPark(findPark)
+    const addPark = await user.createFavorite({
+      where: {
+        name: park
+      }
+    })
+    console.log(favorite)
+    await user.addPark(addPark)
   } catch (error) {
     console.log('🆘 we have an error')
   }

@@ -3,6 +3,7 @@
 <h1> <%= parkDet.name %> </h1>
 <form method="POST" action="/favorite">
     <input hidden type="text" name="name" id='name' value="<%=parkDet.name%>">
+    <input hidden type="text" name="currentUser" id='currentUser' value="<%= currentUser %>">
     <button class="btn btn-primary" type="submit">Add to Favorite Parks! </button>
   </form>
 <br />
