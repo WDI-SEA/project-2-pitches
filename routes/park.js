@@ -12,7 +12,8 @@ router.post('/list', (req, res) => {
 
     db.user.findOrCreate({
       where: {
-        name: currentUser
+        name: currentUser,
+        stateCode: stateCode
     }})
 
     let parkURL =`https://developer.nps.gov/api/v1/parks?stateCode=${stateCode}&sort=&api_key=${park}`
@@ -61,70 +62,38 @@ router.get('/favorite', (req, res) => {
   })
 
 // GET/DELETE display user favorites, let them be able to delete from fav list
-router.post('/favorite', (req, res) => {
-    // Get form data
-   
-    // let name = req.body.name
-    // console.log(name)
-    // add a new record to DB
-  
-//     db.favorite.findOrCreate({
-//       where: {
-//         name: name
-//     }})
-//      .then((data) => {
-//           // redirect back to favorites page
-//           res.redirect('/favorite')
-//       })
-//       .catch((err) => {
-//         console.log(`uh oh we found an err: ${err}`)
-//       })
-// })
-//let name = req.body.name
-//  db.favorite.findOrCreate({
-//   where: {
-//     name: name 
-// }})
+router.post('/favorite', async (req, res) => {
 
-async function addPark() {
-  try {
-    let name = req.body.parkDet.name
-    let currentUser = req.body.name
+    try {
+      let name = req.body.parkDet
+      let currentUser = req.body.name
 
-    const user = await db.user.findOne({
-      where: {
-        name: currentUser
-      }
-    })
-    console.log(user)
-
-    const park = await db.favorite.findOrCreate({
-      where: {
-        name: name
-      }
-    })
-    const addPark = await user.createFavorite({
-      where: {
-        name: park
-      }
-    })
-    console.log(favorite)
-    await user.addPark(addPark)
-  } catch (error) {
-    console.log('🆘 we have an error')
-  }
-}
-res.redirect('/favorite')
-addPark()
+      const user = await db.user.findOne({
+        where: {
+          name: currentUser
+        }
+      })
+      console.log(user)
+      const newPark = await db.favorite.findOrCreate({
+        where: {
+          name: name
+        }
+      })
+      await user.addFavorite(newPark[1])
+      // user.createFavorite({
+      //   name: name
+      // })
+      res.redirect('/favorite')
+    } catch (error) {
+      console.log(`🆘 we have an error:`, error)
+    }
 })
-
-
 
   router.delete('/favorite/:name', (req, res) => {
     //access db for park info
     // use 'include db.user' to access specific user's park db
     // .then db.favorite.destroy where name is req.body.name
-    console.log(req.params)
+    console.log(req.body)
     db.favorite.destroy({
       where: {
         name: req.params.name
