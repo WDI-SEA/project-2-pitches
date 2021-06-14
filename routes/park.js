@@ -51,15 +51,18 @@ router.get('/detail', (req, res) => {
    .catch(error => console.log(error))
 });
 
-// GET route /favorite to display list
-router.get('/favorite', (req, res) => {
-    // Get all records from the DB of favorites
-    db.favorite.findAll()
-      .then(result => {
-        // render favorite's list
-        res.render('favorite', {favorites: result})
-      })
+router.get('/favorite', async (req, res) => {
+  // Get all records from the DB of favorites
+let currentUser = req.query.name
+console.log(req.query, ' THIS IS WHAT IS IN THE FRICKIN BIDY!!!!!!!!!!!!!!!!!')
+  let user = await db.user.findOne({
+    where: {
+      name: currentUser
+    }
   })
+    let fav = await user.getFavorites()
+      res.render('favorite', {favorites: fav})
+})
 
 // GET/DELETE display user favorites, let them be able to delete from fav list
 router.post('/favorite', async (req, res) => {
@@ -80,10 +83,8 @@ router.post('/favorite', async (req, res) => {
         }
       })
       await user.addFavorite(newPark[0])
-      // user.createFavorite({
-      //   name: name
-      // })
-      res.redirect('/favorite')
+      
+      res.redirect(`/favorite?name=${currentUser}`)
     } catch (error) {
       console.log(`🆘 we have an error:`, error)
     }
