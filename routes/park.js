@@ -32,14 +32,16 @@ router.post('/list', (req, res) => {
 
 router.get('/detail', (req, res) => {
     let parkCode = req.query.parkCode
-    let currentUser = db.user.findOne()
-    console.log(parkCode)
+    let currentUser = req.query.name
+    // let currentUser = db.user.findOne()
+    console.log(currentUser, 'CURRENT USER!!!!!!!!!')
+    console.log(parkCode, '!!!!!!!!PARKCODE!!!!!!!!!!')
 
     let parkURL =`https://developer.nps.gov/api/v1/parks?parkCode=${parkCode}&api_key=${park}`
     axios.get(parkURL)
     .then((apiResponse) => {
         const parkDets= apiResponse.data.data
-        console.log(parkDets, currentUser)
+        // console.log(parkDets, currentUser)
         
     
         res.render('detail', {parkDets, currentUser})
@@ -86,9 +88,14 @@ router.post('/favorite', (req, res) => {
 
 async function addPark() {
   try {
-    let name = req.body.name
+    let name = req.body.parkDet.name
+    let currentUser = req.body.name
 
-    const user = await db.user.findOne()
+    const user = await db.user.findOne({
+      where: {
+        name: currentUser
+      }
+    })
     console.log(user)
 
     const park = await db.favorite.findOrCreate({

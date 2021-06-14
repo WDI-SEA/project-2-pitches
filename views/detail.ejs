@@ -1,9 +1,15 @@
+<script>
+ 
+  let currentUser = localStorage.getItem('user')
+</script> 
+
 <% parkDets.forEach(parkDet => { %>
 
 <h1> <%= parkDet.name %> </h1>
 <form method="POST" action="/favorite">
-    <input hidden type="text" name="name" id='name' value="<%=parkDet.name%>">
-    <input hidden type="text" name="currentUser" id='currentUser' value="<%= currentUser %>">
+    <input hidden type="text" name="parkDet" id='parkDet' value="<%=parkDet.name%>">
+    <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
+    <input hidden type='user' id='userInput'/>
     <button class="btn btn-primary" type="submit">Add to Favorite Parks! </button>
   </form>
 <br />

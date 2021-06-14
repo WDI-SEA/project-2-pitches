@@ -8,7 +8,7 @@
     }
     
     let currentUser = localStorage.getItem('user')
-    console.log(`User logged in: ${currentUser}`)
+    console.log(`User logged in: ${currentUser}!!!L!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`)
   </script>
 
   <script>
@@ -48,6 +48,7 @@ Location: <%= address.line1 %>
 <% }) %>
   <form method="GET" action="/detail">
     <input hidden type="text" name="parkCode" id='name' value="<%= park.parkCode %>">
+    <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
     <button class="btn btn-primary" type="submit">More Park Facts</button>
   </form>
 
