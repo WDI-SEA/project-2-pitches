@@ -1,6 +1,3 @@
-<div id='firstInfo'>
-  <h1 id='user'></h1>
-
   <script>
     if (!localStorage.getItem('user')) {
         let user = "<%- currentUser %>"
@@ -16,11 +13,17 @@
     console.log(`User logged in: ${currentUser}`)
   </script>
 
+<style>
+  .jumbotron {
+    height: 380px;
+  }
+</style>
 
      
-    <div class="page-header">
+    <div class="jumbotron text-center" style='background-color: burlywood'>
       <h1>List of National Parks in your state</h1>
       <h3>~There may be multiple fees listed under a park.  Read the description to verify your cost~</h3>
+      <br />
       <h4>Entered wrong state? Click the link below to change states</h4>
       <a href="/update">Update Location</a> 
     </div>
@@ -36,7 +39,7 @@
       <div class='col-lg-8'>
         <% park.addresses.forEach(address => { %>
         <h4>
-        Location: <%= address.line1 %>
+        <strong>Location:</strong> <%= address.line1 %>
                   <%= address.city %>
                   <%= address.stateCode %>
                   <%= address.postalCode %>
@@ -45,22 +48,23 @@
 
         <% park.entranceFees.forEach(entranceFee => { %>
         <h4> 
-            Entrance Fee: <%= entranceFee.cost %> 
+            <strong>Entrance Fee:</strong> <%= entranceFee.cost %> 
                           <%= entranceFee.description %>
         </h4>
         <% }) %>
 
         <% park.operatingHours.forEach(operatingHour => { %>
         <h4> 
-            Hours of Operation: <%= operatingHour.description %>
+          <strong> Hours of Operation:</strong> <%= operatingHour.description %>
         </h4>
         <% }) %>
       </div>
-  </div>
+    </div>
       <form method="GET" action="/detail">
         <input hidden type="text" name="parkCode" id='name' value="<%= park.parkCode %>">
         <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
         <button class="btn btn-primary" type="submit">More Park Facts</button>
+        <hr />
       </form>
 
     <% }) %>
