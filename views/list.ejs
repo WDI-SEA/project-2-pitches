@@ -8,45 +8,55 @@
     }
     
     let currentUser = localStorage.getItem('user')
-    console.log(`User logged in: ${currentUser}!!!L!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`)
   </script>
 
   <script>
-    document.getElementById('user').innerText = `Hello, ${currentUser}, here are your local national parks!`
+    //document.getElementById('user').innerText = `Hello, ${currentUser}, here are your local national parks!`
     document.getElementById('userInput').value = currentUser
     console.log(`User logged in: ${currentUser}`)
   </script>
-<div class="container">
-    <a href="/update">Update Location</a>  
 
-    <h2>List of National Parks in your state</h2>
 
-    <h3>~There may be multiple fees listed under a park.  Read the description to verify your cost~</h3>
+     
+    <div class="page-header">
+      <h1>List of National Parks in your state</h1>
+      <h3>~There may be multiple fees listed under a park.  Read the description to verify your cost~</h3>
+      <h4>Entered wrong state? Click the link below to change states</h4>
+      <a href="/update">Update Location</a> 
+    </div>
+
+  <div class="container">
     <% parks.forEach(park => { %>
         
-    <h1>Park Name: <%= park.name %> </h1>
+    <div class='row'>
+      <div class='col-lg-4'>
+        <h2>Park Name: <%= park.name %> </h2>
+      </div>
+    
+      <div class='col-lg-8'>
+        <% park.addresses.forEach(address => { %>
+        <h4>
+        Location: <%= address.line1 %>
+                  <%= address.city %>
+                  <%= address.stateCode %>
+                  <%= address.postalCode %>
+        </h4>
+        <% }) %>
 
-    <% park.addresses.forEach(address => { %>
-    <h4>
-    Location: <%= address.line1 %>
-              <%= address.city %>
-              <%= address.stateCode %>
-              <%= address.postalCode %>
-    </h4>
-    <% }) %>
+        <% park.entranceFees.forEach(entranceFee => { %>
+        <h4> 
+            Entrance Fee: <%= entranceFee.cost %> 
+                          <%= entranceFee.description %>
+        </h4>
+        <% }) %>
 
-    <% park.entranceFees.forEach(entranceFee => { %>
-    <h4> 
-        Entrance Fee: <%= entranceFee.cost %> 
-                      <%= entranceFee.description %>
-    </h4>
-    <% }) %>
-
-    <% park.operatingHours.forEach(operatingHour => { %>
-    <h4> 
-        Hours of Operation: <%= operatingHour.description %>
-    </h4>
-    <% }) %>
+        <% park.operatingHours.forEach(operatingHour => { %>
+        <h4> 
+            Hours of Operation: <%= operatingHour.description %>
+        </h4>
+        <% }) %>
+      </div>
+  </div>
       <form method="GET" action="/detail">
         <input hidden type="text" name="parkCode" id='name' value="<%= park.parkCode %>">
         <input hidden type="text" name="name" id='name' value="<%= currentUser %>">

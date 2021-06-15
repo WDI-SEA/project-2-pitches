@@ -1,4 +1,12 @@
 .jumbotron {
     background-image: url(../img/NPSHomeScreen.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
+    height: 475px;
   }
+
+.page-header {
+  background-color: burlywood;
+  background-size: 100% 100%; 
+  /* height: 475px; */
+  text-align: center;
+}
