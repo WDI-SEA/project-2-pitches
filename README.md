@@ -28,14 +28,14 @@ In designing and building your project, you will start by forking and cloneing t
     * https://www.dnd5eapi.co/api/spells/  -- Lists all Spells
     * https://www.dnd5eapi.co/api/spells/acid-arrow/ -- Lists details about the spell
 7. MVP goals (x3-5)
-    [] Make login page for users to have individual "spellbooks"
-    [] Allow users to browse list of spells and add them to a "spellbook"
-    [] Allow users to "homebrew" their own spells by being able to modify their saved spell's name/description/damage dice/material costs/etc.
+    [X] Make login page for users to have individual "spellbooks"
+    [X] Allow users to browse list of spells and add them to a "spellbook"
+    [X] Instead of a list of spells in the spellbooks, use Bootstrap to create card templates
 8. Stretch goals (x2-5)
-    [] Instead of a list of spells in the spellbooks, use Bootstrap to do flip card animations
-    [] Use Bootstrap Modals to allow for "homebrewing" of spells
-    [] Add list of classes who can use the spells
-    [] Have a list of different spellbooks that the user created.
+    [X] Use Bootstrap Modals
+    [X] Add list of classes who can use the spells
+    [X] Have a list of different spellbooks that the user created.
+    [] Allow users to "homebrew" their own spells by being able to modify their saved spell's name/description/damage dice/material costs/etc.
 9. Any potential roadblocks?
     * Keeping a user "signed in" while they traverse each page.
 
