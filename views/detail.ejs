@@ -3,6 +3,8 @@
   let currentUser = localStorage.getItem('user')
 </script> 
 
+<div class="container">
+
 <% parkDets.forEach(parkDet => { %>
 
 <h1> <%= parkDet.name %> </h1>
@@ -34,3 +36,5 @@
 <p> <%= parkDet.directionsInfo %> </p>
 
 <% }) %>
+
+</div>

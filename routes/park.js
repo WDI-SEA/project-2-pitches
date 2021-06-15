@@ -110,6 +110,7 @@ router.post('/favorite', async (req, res) => {
     })
     .then ((data) => {
       console.log('The task has been done 😈')
+      console.log(currentUser,'🚀')
       // . then res.redirect('back') (this will reload the page)
      res.redirect(`/favorite?name=${currentUser}`)
     })

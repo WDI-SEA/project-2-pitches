@@ -16,44 +16,44 @@
     document.getElementById('userInput').value = currentUser
     console.log(`User logged in: ${currentUser}`)
   </script>
+<div class="container">
+    <a href="/update">Update Location</a>  
 
-<a href="/update">Update Location</a>  
+    <h2>List of National Parks in your state</h2>
 
-<h2>List of National Parks in your state</h2>
+    <h3>~There may be multiple fees listed under a park.  Read the description to verify your cost~</h3>
+    <% parks.forEach(park => { %>
+        
+    <h1>Park Name: <%= park.name %> </h1>
 
-<h3>~There may be multiple fees listed under a park.  Read the description to verify your cost~</h3>
-<% parks.forEach(park => { %>
-    
-<h1>Park Name: <%= park.name %> </h1>
+    <% park.addresses.forEach(address => { %>
+    <h4>
+    Location: <%= address.line1 %>
+              <%= address.city %>
+              <%= address.stateCode %>
+              <%= address.postalCode %>
+    </h4>
+    <% }) %>
 
-<% park.addresses.forEach(address => { %>
-<h4>
-Location: <%= address.line1 %>
-          <%= address.city %>
-          <%= address.stateCode %>
-          <%= address.postalCode %>
-</h4>
-<% }) %>
+    <% park.entranceFees.forEach(entranceFee => { %>
+    <h4> 
+        Entrance Fee: <%= entranceFee.cost %> 
+                      <%= entranceFee.description %>
+    </h4>
+    <% }) %>
 
-<% park.entranceFees.forEach(entranceFee => { %>
-<h4> 
-    Entrance Fee: <%= entranceFee.cost %> 
-                  <%= entranceFee.description %>
-</h4>
-<% }) %>
+    <% park.operatingHours.forEach(operatingHour => { %>
+    <h4> 
+        Hours of Operation: <%= operatingHour.description %>
+    </h4>
+    <% }) %>
+      <form method="GET" action="/detail">
+        <input hidden type="text" name="parkCode" id='name' value="<%= park.parkCode %>">
+        <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
+        <button class="btn btn-primary" type="submit">More Park Facts</button>
+      </form>
 
-<% park.operatingHours.forEach(operatingHour => { %>
-<h4> 
-    Hours of Operation: <%= operatingHour.description %>
-</h4>
-<% }) %>
-  <form method="GET" action="/detail">
-    <input hidden type="text" name="parkCode" id='name' value="<%= park.parkCode %>">
-    <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
-    <button class="btn btn-primary" type="submit">More Park Facts</button>
-  </form>
-
-<% }) %>
-
+    <% }) %>
+    </div>
 
 </div>

@@ -1,22 +1,25 @@
-<script>
-  let currentUser = localStorage.getItem('user')
-  console.log(`FYI the current user is: ${currentUser}`)
-</script> 
-
+<div class="container">
 <ul>
 <h3>
   <div class="form-group">
     <% favorites.forEach(favorite => { %>
       <li> <%= favorite.name %>  </li>  
     <form method="POST" action="/favorite/<%= favorite.name %>/?_method=DELETE">
+      <input hidden type='text' id='user' name='name'>
       <input type="submit" value="Delete" class='btn btn-primary'>
       </form>
     <% }) %> 
     
 </h3>
 </ul>
- 
+  </div> 
 
 <a href="/">Home Page</a>
-</div>  
  
+</div>
+
+<script>
+  let currentUser = localStorage.getItem('user')
+  console.log(`FYI the current user is: ${currentUser}`)
+  document.getElementById('user').value = currentUser
+</script> 
