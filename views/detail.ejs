@@ -2,17 +2,30 @@
   let currentUser = localStorage.getItem('user')
 </script> 
 
-<div class="container">
+<style>
+  .jumbotron {
+    background-image: url(parkDet.images[0].url);
+  }
 
+  img {
+    height: 300px;
+    width: 600px;
+  }
+</style>
+
+<div class="container">
+  
 <% parkDets.forEach(parkDet => { %>
   <div class="jumbotron text-center">
     <h1> <%= parkDet.name %> </h1>
+    <img src='<%=parkDet.images[0].url%>' />
     <form method="POST" action="/favorite">
         <input hidden type="text" name="parkDet" id='parkDet' value="<%=parkDet.name%>">
         <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
         <input hidden type='user' id='userInput'/>
-        <button class="btn btn-primary" type="submit">Add to Favorite Parks! </button>
       </form>
+      <br />
+        <button class="btn btn-primary" type="submit">Add to Favorite Parks! </button>
   </div>
   <br />
 <h4><strong>Park Facts:</strong></h4>
