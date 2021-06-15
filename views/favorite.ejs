@@ -1,17 +1,20 @@
 <div class="container">
-<ul>
-<h3>
-  <div class="form-group">
-    <% favorites.forEach(favorite => { %>
-      <li> <%= favorite.name %>  </li>  
-    <form method="POST" action="/favorite/<%= favorite.name %>/?_method=DELETE">
-      <input hidden type='text' id='user' name='name'>
-      <input type="submit" value="Delete" class='btn btn-primary'>
-      </form>
-    <% }) %> 
-    
-</h3>
-</ul>
+  <div class="jumbotron text-center">
+    <h1>Favorite Parks: </h1>
+  </div>
+    <ul>
+      <h2>
+        <div class="form-group">
+          <% favorites.forEach(favorite => { %>
+            <li> <%= favorite.name %>  </li>  
+          <form method="POST" action="/favorite/<%= favorite.name %>/?_method=DELETE">
+            <input hidden type='text' id='user' name='name'>
+            <input type="submit" value="Delete" class='btn btn-primary btn-xs'>
+            </form>
+          <% }) %> 
+          
+      </h2>
+    </ul>
   </div> 
 
 <a href="/">Home Page</a>

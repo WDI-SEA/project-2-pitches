@@ -1,38 +1,38 @@
 <script>
- 
   let currentUser = localStorage.getItem('user')
 </script> 
 
 <div class="container">
 
 <% parkDets.forEach(parkDet => { %>
-
-<h1> <%= parkDet.name %> </h1>
-<form method="POST" action="/favorite">
-    <input hidden type="text" name="parkDet" id='parkDet' value="<%=parkDet.name%>">
-    <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
-    <input hidden type='user' id='userInput'/>
-    <button class="btn btn-primary" type="submit">Add to Favorite Parks! </button>
-  </form>
-<br />
-<h4>Park Facts:</h4>
+  <div class="jumbotron text-center">
+    <h1> <%= parkDet.name %> </h1>
+    <form method="POST" action="/favorite">
+        <input hidden type="text" name="parkDet" id='parkDet' value="<%=parkDet.name%>">
+        <input hidden type="text" name="name" id='name' value="<%= currentUser %>">
+        <input hidden type='user' id='userInput'/>
+        <button class="btn btn-primary" type="submit">Add to Favorite Parks! </button>
+      </form>
+  </div>
+  <br />
+<h4><strong>Park Facts:</strong></h4>
 <p> <%= parkDet.description %> </p>
 <br />
-<h4>Fun Park Activites:</h4>
+<h4><strong>Fun Park Activites:</strong></h4>
 <% parkDet.activities.forEach(activity => { %>
 <p>
    <%= activity.name %>
 </p>
 <% }) %> 
 <br />
-<h4>Fun Park Topics:</h4>
+<h4><strong>Fun Park Topics:</strong></h4>
 <% parkDet.topics.forEach(topic => { %>
 <p>
     <%= topic.name %>
 </p>
 <% }) %>
 <br />
-<h4>Park Directions: </h4>
+<h4><strong>Park Directions: </strong></h4>
 <p> <%= parkDet.directionsInfo %> </p>
 
 <% }) %>
