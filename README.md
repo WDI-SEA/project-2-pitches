@@ -33,7 +33,7 @@ In designing and building your project, you will start by forking and cloneing t
      ## Favorites page
      ## Category selection redirects to new page with results
 9. Stretch goals (x2-5)
-     ## Implament Wookie translation feature
+     ## Implement Wookie translation feature
      ## Stylizied more in depth
 10. Any potential roadblocks?
      ## Time commitment to figure out authentication(login/register)
