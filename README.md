@@ -17,24 +17,15 @@ In designing and building your project, you will start by forking and cloneing t
 2. Tech stack
   ![image](https://user-images.githubusercontent.com/65565104/141505595-c0b3d33c-be08-4b43-92f1-c99c29d354ac.png)
 4. Simple wireframes
-     * Can be handdrawn, or with tool of your choice
-     * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
-6. ERD
-7. Example of how to call/invoke your API, and a description of what data comes back. 
-8. MVP goals (x3-5)
-9. Stretch goals (x2-5)
-10. Any potential roadblocks?
+     * Home Page
+     ![image](https://user-images.githubusercontent.com/65565104/141506708-0d19b0b2-e48b-4d44-92c5-59373127d791.png)
+5. API you plan to use (Riot Games)
+7. ERD (https://lucid.app/lucidchart/83abfffa-f6b3-4920-8687-f30e4f88fb4b/edit?invitationId=inv_57b48f0b-83b3-426a-8b8f-4489b60ce293&page=0_0#)
+8. Example of how to call/invoke your API, and a description of what data comes back. The API is very extensive I can get players rank, champions played, previous game results. Also they have proivded a zip file that holds all of the items, champions data
+10. MVP goals (x3-5) To have an app that a player can sign into and save faviort champs, items and summoners. Then the two features will be a user can place items onto champs and get the stats back with the new items on the champion. Also what to allow user to check on summors ranks and match history
+11. Stretch goals (x2-5) Alow user to check stats when champion based on level, also access more information on summoners. 
+12. Any potential roadblocks? Riot updates items and champions evey 2 weeks, also my api key only lasts 24 hours untill approved by riot
 
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart.
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
       
 
 
