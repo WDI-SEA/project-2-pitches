@@ -37,4 +37,5 @@ show detailed information on the top rated landmarks and restaurants to visit.
 + add hotel options page 
 + add top activities to do around the area
 
-![Screen Shot 2021-11-12 at 3 48 39 PM](https://user-images.githubusercontent.com/22379194/141532749-3ee6810a-7812-401e-bd02-5081f98874fe.png)
+![Screen Shot 2021-11-12 at 3 48 39 PM](https://user-images.githubusercontent.com/22379194/141546309-1ee4cdc9-20a6-46de-a1e9-ce064bf477a5.png)
+
