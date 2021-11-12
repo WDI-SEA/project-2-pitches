@@ -16,6 +16,9 @@ In designing and building your project, you will start by forking and cloneing t
 1. Name of your app
 2. Tech stack you plan to use
 3. Simple wireframes
+![project2png](https://user-images.githubusercontent.com/91287414/141536138-e5d414e0-26e5-418f-a1e2-a59f71454006.png)
+
+
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
 5. API you plan to use
@@ -34,6 +37,7 @@ In designing and building your project, you will start by forking and cloneing t
       * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
       * Create a new git repo for your project. 
       * Make all test API calls you need to to ensure your API will be usable for this project. 
+      
       
 
 
