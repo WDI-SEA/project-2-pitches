@@ -21,7 +21,7 @@
 * wger Workout Manager
 
 ## ERD
-![Wireframe Start](./images)
+![Wireframe Start](./images/erd.png)
 
 ## Examples of API Data
 API root = https://wger.de/api/v2/<:param>/?language=2
@@ -51,6 +51,9 @@ API root = https://wger.de/api/v2/<:param>/?language=2
 * User will be able to search for exercises with option to add to two lists:
      1. favorite exercises
      2. save for next workout
+* User will be able to go to their own page for favorites and saves
+     * each with their own delete button
+     * saves will have a comment section for user to add notes on when/what type of workout they're saving exercise for
 
 ## Stretch Goals
 * Use a second API to call for inspirational fitness quotes
@@ -61,4 +64,4 @@ API root = https://wger.de/api/v2/<:param>/?language=2
 ## Potential Roadblocks
 * Some of the data returned might be in German
 * Narrowing down what to search by
-* Keeping with one idea
+* Adding on too many ideas/changing which idea I want to develop
