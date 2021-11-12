@@ -127,8 +127,7 @@ The Spotify Web API uses REST principles to return JSON metadata from the Spotif
 - save user result inputs to results database, and make a page to display the user's past searches
 
 ### Stretch goals
-
-- instead of grabbing entire album, grab most popular song from album (this is part of GET track operation)
+- sort albums by popularity (this can be returned from GET albums) OR instead of grabbing entire album, grab most popular song from album (this is part of GET track operation)
 - explore including a "play" link or option (not sure how this works within the API, so I need to do more research)
 
 ## Potential roadblocks
