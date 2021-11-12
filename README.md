@@ -35,6 +35,7 @@ API you plan to use
 
 ERD
 
+**ERD:**
      <p text-align="center">
      <img alt="erd" src="erd.png">
      </p>
