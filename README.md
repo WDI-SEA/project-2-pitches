@@ -1,41 +1,103 @@
-# Project 2 Pitch Guidelines
-Project Description and Pitch Guidelines for SEIR SEA P2
+## Project 2 Pitch
 
----
-## Project 2 Goals
+#### An app that will serve as a platform for users to showcase their plants.
 
-In your second project you will create a full stack Express and Postgres app which has:
-- *At least x2 models, and utilize and build at least one relationship between the two models.*
-- *Sequelize as an ORM to interact with and create your database.*
-- *An Express server utilizing EJS/EJS layouts for UI design and styling.*
-- *Interaction with and inclusion of at least one API.*
+#### MVP Goals
+ 1. Users will be able to create a profile with basic information
+ 2. Users will be able to create or delete a profile of their plant.
+ 3. Be able to leave comments or give tips to other users
+ 4. Display information on how to take care of common indoor plants
 
-## Project 2 Pitch Guidelines
+#### Stretch Goals
+ 1. Users will be able to upload a photo of their plant using an API
 
-In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
-2. Tech stack you plan to use
-3. Simple wireframes
-     * Can be handdrawn, or with tool of your choice
-     * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
-6. ERD
-7. Example of how to call/invoke your API, and a description of what data comes back. 
-8. MVP goals (x3-5)
-9. Stretch goals (x2-5)
-10. Any potential roadblocks?
+#### Tech stack
+* NodeJS
+* Express
+* PostgreSQL
+* Bootstrap
 
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart.
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
-      
+#### Wireframes
+![wireframe](assets/wireframe.png)
+#### API
+* Trefle is a botanical JSON REST API for plants species, allowing you to search and query over all the registered species
 
+#### ERD<br>
+![ERD](assets/erd.png)
+<br>
+Using node-fetch module:
+```
+const fetch = require('node-fetch');
 
+(async () => {
+  const response = await fetch('https://trefle.io/api/v1/plants?token=YOUR_TREFLE_TOKEN');
+  const json = await response.json();
+  console.log(json);
+})();
+```
+JSON response looks like this:
+```
+{
+    "data": [
+        {
+            "author": "Schltr.",
+            "bibliography": "Repert. Spec. Nov. Regni Veg. 16: 358 (1920)",
+            "common_name": null,
+            "family": "Orchidaceae",
+            "family_common_name": null,
+            "genus": "Aa",
+            "genus_id": 14887,
+            "id": 834556,
+            "links": {
+                "genus": "/api/v1/genus/aa",
+                "plant": "/api/v1/plants/aa-achalensis",
+                "self": "/api/v1/species/aa-achalensis"
+            },
+            "plant_id": 423071,
+            "rank": "species",
+            "scientific_name": "Aa achalensis",
+            "slug": "aa-achalensis",
+            "status": "accepted",
+            "synonyms": [],
+            "year": 1920
+        },
+        {
+            "author": "Rchb.f.",
+            "bibliography": "Xenia Orchid. 1: 18 (1854)",
+            "common_name": null,
+            "family": "Orchidaceae",
+            "family_common_name": null,
+            "genus": "Aa",
+            "genus_id": 14887,
+            "id": 834557,
+            "links": {
+                "genus": "/api/v1/genus/aa",
+                "plant": "/api/v1/plants/aa-argyrolepis",
+                "self": "/api/v1/species/aa-argyrolepis"
+            },
+            "plant_id": 423072,
+            "rank": "species",
+            "scientific_name": "Aa argyrolepis",
+            "slug": "aa-argyrolepis",
+            "status": "accepted",
+            "synonyms": [
+                "Altensteinia argyrolepis"
+            ],
+            "year": 1854
+        },  // ... 28 more items
+    ],
+    "links": {
+        "first": "/api/v1/species?page=1",
+        "last": "/api/v1/species?page=20865",
+        "next": "/api/v1/species?page=2",
+        "self": "/api/v1/species"
+    },
+    "meta": {
+        "total": 417293
+    }
+}
+```
 
-
+#### Potential Roadblocks
+* Trefle API is now read-only
+* Learning how to use Cheerio to gather information on plants
