@@ -14,16 +14,38 @@ In your second project you will create a full stack Express and Postgres app whi
 
 In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
 1. Name of your app
+     * Yena Buna(this is how you say my coffee in Amharic(Ethiopia national language)
+     * "My Coffee"
 2. Tech stack you plan to use
+     express
+     ejs
+     ejs layouts
+     bootstrap
+     method-override
+
 3. Simple wireframes
-     * Can be handdrawn, or with tool of your choice
-     * Example online tool: [Miro.com](https://miro.com/)
+
 5. API you plan to use
+     *Yelp Api
+     *Googele search Api
 6. ERD
+
 7. Example of how to call/invoke your API, and a description of what data comes back. 
+     *GET https://api.yelp.com/v3/businesses/search
+
 8. MVP goals (x3-5)
+     * Create data on different types of coffee
+     * User log in page
+     * Functional Favorites page
+     * Ability to search coffee shops
 9. Stretch goals (x2-5)
+     *Coffee of the week
+     *Highlight a small business coffee shop
+     *Blog of how people make there coffee 
 10. Any potential roadblocks?
+     *Api issues 
+     *Data entry
+     *ERD, making sure i didnt forget anything 
 
 ## How to get started
 1. **Fork and clone this repository.**
