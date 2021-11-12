@@ -13,6 +13,8 @@
 let animeUrl = 'https://api.myanimelist.net/v2';
 }
 
+* curl 'https://api.myanimelist.net/v0.20/anime/
+
 Will have it call back anime titles, description, icons, etc.
 
 7. MVP goals (x3-5)
