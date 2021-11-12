@@ -14,22 +14,21 @@ In your second project you will create a full stack Express and Postgres app whi
 
 In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
 1. Name of your app
-Project 2, for now
+Food logger
 2. Tech stack you plan to use
 Javascript is the main thing that will be used to create and build the app. Possibly css for styling at a later time.
 3. Simple wireframes
 Lucid will be used to create wireframes
 5. API you plan to use
-I have some in mind, 
-Harry Potter
-Food: pancakes, donuts, going to look into likes or even dislikes
+Zomato and Nutritionix
 6. ERD
-I have not drawn any up, YET.
+Image goes here
 7. Example of how to call/invoke your API, and a description of what data comes back.
 While there are a few ways of invoking an API, I MIGHT sitck to using AXIOS.
 8. MVP goals (x3-5)
-Main goal at the moment will be to display the information from the API
+Main goal at the moment will be to have the user log the food that was consumed by type of food and the time (breakfast, lunch, dinner). API will be used mainly for time logging.
 9. Stretch goals (x2-5)
+Make user profiles, add images.
 10. Any potential roadblocks?
 
 ## How to get started
