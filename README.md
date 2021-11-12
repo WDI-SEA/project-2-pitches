@@ -10,39 +10,31 @@ In your second project you will create a full stack Express and Postgres app whi
 - *An Express server utilizing EJS/EJS layouts for UI design and styling.*
 - *Interaction with and inclusion of at least one API.*
 
-## Project 2 Pitch Guidelines
+# Music Time Machine
 
-In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
+## Tech stack
 
-Name of your app
+Postgres, Express
 
-**Music Time Machine**
+## Wireframes
 
-Tech stack you plan to use
+Initial wireframes:
 
-**Postgres, Express**
+<img alt="wireframes" src="wireframes.png">
 
-Simple wireframes
 
-**Wireframes:**
-     <p text-align="center">
-     <img alt="wireframes" src="wireframes.png">
-     </p>
+## API
 
-API you plan to use
+Spotify Web API (client credentials flow)
 
-**Spotify Web API (client credentials flow)**
+## Entity Relationship Diagram
 
-ERD
+<img alt="erd" src="erd.png">
 
-**ERD:**
-     <p text-align="center">
-     <img alt="erd" src="erd.png">
-     </p>
+### Example of how to call/invoke the API, and a description of what data comes back
 
-Example of how to call/invoke your API, and a description of what data comes back. 
+The Spotify Web API uses REST principles to return JSON metadata from the Spotify Data Catalogue. The app.js file that is included in this folder (make sure to run npm install for node dependecies) uses the client credentials flow to produce a response that includes album information, given a Spotify album ID number. The client credentials flow does not ask the site user for their Spotify information; it only authenticates the request via the developer(client) credentials.
 
-**The Spotify Web API uses REST principles to return JSON metadata from the Spotify Data Catalogue. The app.js file that is included in this folder (make sure to run npm install for node dependecies) uses the client credentials flow to produce a response that includes album information, given a Spotify album ID number. The client credentials flow does not ask the site user for their Spotify information; it only authenticates the request via the developer(client) credentials.**
 ```sh
 {
   album_type: 'album',
@@ -124,30 +116,19 @@ Example of how to call/invoke your API, and a description of what data comes bac
 }
 ```
 
-MVP goals (x3-5)
+## MVP goals
 
-**- create user database for storing user login data**
-**- set up user form to successfully call Spotify Web API to GET albums from a selected genre for a certain year**
-**- create one-to-many relationship between 1 user and many result inputs**
-**- save user result inputs to results database, and make a page to display the user's past searches**
+- create user database for storing user login data
+- set up user form to successfully call Spotify Web API to GET albums from a selected genre for a certain year**
+- create one-to-many relationship between 1 user and many result inputs
+- save user result inputs to results database, and make a page to display the user's past searches
 
-Stretch goals (x2-5)
+## Stretch goals
 
-**- create ejs page that includes additional information about each album, besides just album name and release year**
-**- explore including a "play" link or option (not sure how this works within the API, so I need to do more research)**
+- create ejs page that includes additional information about each album, besides just album name and release year
+- explore including a "play" link or option (not sure how this works within the API, so I need to do more research)
 
-Any potential roadblocks?
+## Potential roadblocks
 
-**- I need to make sure I am adhering to the Spotify development/design guidelines for this app (very detailed and specific requirements for using their API)**
-**- I need to fully understand the differences/limitations of different authorization flows, mainly client credentials vs. authorization code flow**
-
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart.
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
-      
+- I need to make sure I am adhering to the Spotify development/design guidelines for this app (very detailed and specific requirements for using their API)
+- I need to fully understand the differences/limitations of different authorization flows, mainly client credentials vs. authorization code flow
