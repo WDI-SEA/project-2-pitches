@@ -16,17 +16,17 @@ In designing and building your project, you will start by forking and cloneing t
 1. Name of your app
 2. Tech stack you plan to use
 3. Simple wireframes
-![project2png](https://user-images.githubusercontent.com/91287414/141536138-e5d414e0-26e5-418f-a1e2-a59f71454006.png)
+
 
 
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
 5. API you plan to use
 6. ERD
-7. https://lucid.app/lucidchart/63972c5b-9c2d-47fb-9db7-4d71e3b8ac9e/edit?viewport_loc=-148%2C-88%2C2585%2C1272%2C0_0&invitationId=inv_cc147db1-3bf0-4581-b34b-e6d3c5c28a65
+7. 
 8. Example of how to call/invoke your API, and a description of what data comes back. 
 9. MVP goals (x3-5)
-10. Stretch goals (x2-5)h
+10. Stretch goals (x2-5)
 11. Any potential roadblocks?
 
 ## How to get started
