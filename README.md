@@ -13,13 +13,13 @@ In your second project you will create a full stack Express and Postgres app whi
 Transliterary
 Express, EJS, Sequelize, Postgres
 Papago translation API
-API invocation is any block of text that you wish to translate as well as a selected language you wish to translate to
+API invocation is any block of text that you wish to translate as well as a selected language you wish to translate into
 MVP goals
 -submit a block of text in any language
 -select a language to translate into
 -create a post in the original and translated language
 9. Stretch goals (x2-5)
--Link another api that parses text from a pdf file or a menu and provides a usable translation. I.E. a menu translated from english to Korean or Chinese. 
+-Link another api that parses text from a png or jpeg and provides a usable translation. I.E. a menu translated from english to Korean or Chinese
 
 
       
