@@ -6,12 +6,13 @@ show detailed information on the top rated landmarks and restaurants to visit.
 
 ## tech stack
 + Javascript
-+ CSS
++ Expree
 + ejs
 + Sequelize
 + postgres
 + axios
 + ejs-layouts
++ CSS
 
 ## API to use
 + TripAdvisor Api
