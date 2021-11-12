@@ -14,4 +14,4 @@ postgress
 
 ERD
 
-![primal recipes](https://user-images.githubusercontent.com/34468962/141536979-575104b6-c5f5-47a5-923d-84a9adebe771.png)
+![primal recipes (1)](https://user-images.githubusercontent.com/34468962/141537249-65e2b1ae-2662-4727-a5a9-a59a91b2b1ac.png)
