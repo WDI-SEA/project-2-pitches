@@ -21,7 +21,7 @@ Food logger
 **Lucid will be used to create wireframes
 5. API you plan to use
 **Zomato and Nutritionix
-6. ERD![Blank diagram (2)](https://user-images.githubusercontent.com/91762173/141539960-2518f3c0-bdb1-43bd-80fa-77234a3c928e.jpeg)
+6. ERD!![Blank diagram (3)](https://user-images.githubusercontent.com/91762173/141540211-0659f897-16f7-456e-9a16-7bb853bcfa21.jpeg)
 7. Example of how to call/invoke your API, and a description of what data comes back.
 **While there are a few ways of invoking an API, I MIGHT sitck to using AXIOS.
 8. MVP goals (x3-5)
