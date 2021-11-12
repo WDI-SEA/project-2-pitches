@@ -22,7 +22,7 @@ Food logger
 5. API you plan to use
 **Zomato and Nutritionix
 6. ERD
-7. [Blank diagram (3)](https://user-images.githubusercontent.com/91762173/141540211-0659f897-16f7-456e-9a16-7bb853bcfa21.jpeg)
+7. ![Blank diagram (3)](https://user-images.githubusercontent.com/91762173/141540211-0659f897-16f7-456e-9a16-7bb853bcfa21.jpeg)
 8. Example of how to call/invoke your API, and a description of what data comes back.
 **While there are a few ways of invoking an API, I MIGHT sitck to using AXIOS.
 8. MVP goals (x3-5)
