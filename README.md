@@ -1,41 +1,38 @@
-# Project 2 Pitch Guidelines
-Project Description and Pitch Guidelines for SEIR SEA P2
+# Vacation Buddy
 
----
-## Project 2 Goals
+## About
+The app is designed to recommened places to visit on the desired destination.
+show detailed information on the top rated landmarks and restaurants to visit.
 
-In your second project you will create a full stack Express and Postgres app which has:
-- *At least x2 models, and utilize and build at least one relationship between the two models.*
-- *Sequelize as an ORM to interact with and create your database.*
-- *An Express server utilizing EJS/EJS layouts for UI design and styling.*
-- *Interaction with and inclusion of at least one API.*
+## tech stack
++ Javascript
++ CSS
++ ejs
++ Sequelize
++ postgres
++ axios
++ ejs-layouts
 
-## Project 2 Pitch Guidelines
-
-In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
-2. Tech stack you plan to use
-3. Simple wireframes
-     * Can be handdrawn, or with tool of your choice
-     * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
-6. ERD
-7. Example of how to call/invoke your API, and a description of what data comes back. 
-8. MVP goals (x3-5)
-9. Stretch goals (x2-5)
-10. Any potential roadblocks?
-
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart.
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
-      
+## API to use
++ TripAdvisor Api
++ Amadeus API
 
 
+## Models
++ User 
++ Landmarks
++ restaurants
 
 
+## MVP
++ create a page where  user is able to search for travel destinations using the search bar 
++ create an attractions page list for the chosen destination
++ Attraction page will render city name, 4-5 recommended landmarks, 4-5 highest rated restaurants/food places to go
++ create detailed pages for selected landmarks or restaurants 
++ create links to go back to the  home page, attractions page.
+
+## Stretch
++ add hotels pricings
++ add flights 
+
+![Screen Shot 2021-11-12 at 3 48 39 PM](https://user-images.githubusercontent.com/22379194/141532749-3ee6810a-7812-401e-bd02-5081f98874fe.png)
