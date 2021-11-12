@@ -16,6 +16,7 @@ In your second project you will create a full stack Express and Postgres app whi
 ## Project 2 Pitch Guidelines
 
 ![screenshot](wireframe.png)
+![Entity Relational Diagram](ERD.png)
 
 1. My Chronicles
 2. Tech Stack
@@ -24,11 +25,17 @@ In your second project you will create a full stack Express and Postgres app whi
    - Express
    - SASS
 3. Famous Quotes API
-4. ERD
-5. Example of how to call/invoke your API, and a description of what data comes back.
-6. MVP goals (x3-5)
-7. Stretch goals (x2-5)
-8. Any potential roadblocks?
+4. MVP goals:
+   - Login User
+   - Be able to retrieve all entries from user
+   - Be able to retrieve one entry from user
+   - Be able to add images
+   - Change grid layout
+5. Stretch goals:
+   - Set up a timeline
+   - Make app for mobile use
+   - Allow the user to select weather and feeling from emojis.
+6. Any potential roadblocks?
 
 ## How to get started
 
