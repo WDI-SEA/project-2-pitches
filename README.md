@@ -29,7 +29,7 @@ In designing and building your project, you will start by forking and cloneing t
      *Yelp Api
      *Googele search Api
 6. ERD
-
+https://lucid.app/lucidchart/a51a9428-8f5d-41ad-aa17-0ebe01236e7c/edit?invitationId=inv_e0133ffb-57bf-4f57-81df-14918b6ded66
 7. Example of how to call/invoke your API, and a description of what data comes back. 
      *GET https://api.yelp.com/v3/businesses/search
 
