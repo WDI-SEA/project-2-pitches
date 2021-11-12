@@ -26,7 +26,7 @@ In designing and building your project, you will start by forking and cloneing t
 7. https://lucid.app/lucidchart/63972c5b-9c2d-47fb-9db7-4d71e3b8ac9e/edit?viewport_loc=-148%2C-88%2C2585%2C1272%2C0_0&invitationId=inv_cc147db1-3bf0-4581-b34b-e6d3c5c28a65
 8. Example of how to call/invoke your API, and a description of what data comes back. 
 9. MVP goals (x3-5)
-10. Stretch goals (x2-5)
+10. Stretch goals (x2-5)h
 11. Any potential roadblocks?
 
 ## How to get started
