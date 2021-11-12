@@ -1,7 +1,6 @@
 # Project 2 Pitch Guidelines
 Project Description and Pitch Guidelines for SEIR SEA P2
 
----
 ## Project 2 Goals
 
 In your second project you will create a full stack Express and Postgres app which has:
@@ -10,9 +9,13 @@ In your second project you will create a full stack Express and Postgres app whi
 - *An Express server utilizing EJS/EJS layouts for UI design and styling.*
 - *Interaction with and inclusion of at least one API.*
 
+---
+
 <img alt="records" src="records.png">
 
 # Music Time Machine
+
+Particularly fond of the music scene from 2009? Or 1987? Revisit an entire past year of music for your favorite genre.
 
 ## Tech stack
 
