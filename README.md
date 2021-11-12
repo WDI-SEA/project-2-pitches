@@ -23,18 +23,16 @@ Postgres, Express
 
 ## Wireframes
 
-Initial wireframes:
-
 <img alt="wireframes" src="wireframes.png">
 
+## Entity Relationship Diagram
+
+<img alt="erd" src="erd.png">
 
 ## API
 
 Spotify Web API (client credentials flow)
 
-## Entity Relationship Diagram
-
-<img alt="erd" src="erd.png">
 
 ### Example of how to call/invoke the API, and a description of what data comes back
 
@@ -128,7 +126,7 @@ The Spotify Web API uses REST principles to return JSON metadata from the Spotif
 - create one-to-many relationship between 1 user and many result inputs
 - save user result inputs to results database, and make a page to display the user's past searches
 
-## Stretch goals
+### Stretch goals
 
 - create ejs page that includes additional information about each album, besides just album name and release year
 - explore including a "play" link or option (not sure how this works within the API, so I need to do more research)
