@@ -4,7 +4,7 @@ a collection of keto-friendly and paleo recipes saved for your convinience
 
 I will be using
 
-
+Edamam API for food searches
 HTML
 bootstrap
 Javascript
