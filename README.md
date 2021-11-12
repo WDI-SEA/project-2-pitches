@@ -10,6 +10,8 @@ In your second project you will create a full stack Express and Postgres app whi
 - *An Express server utilizing EJS/EJS layouts for UI design and styling.*
 - *Interaction with and inclusion of at least one API.*
 
+<img alt="records" src="records.png">
+
 # Music Time Machine
 
 ## Tech stack
