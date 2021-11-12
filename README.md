@@ -19,7 +19,7 @@ In designing and building your project, you will start by forking and cloneing t
 4. Simple wireframes
      * Home Page
      ![image](https://user-images.githubusercontent.com/65565104/141506708-0d19b0b2-e48b-4d44-92c5-59373127d791.png)
-5. API you plan to use (Riot Games)
+5. API you plan to use (Riot Games) https://developer.riotgames.com/docs/lol
 7. ERD (https://lucid.app/lucidchart/83abfffa-f6b3-4920-8687-f30e4f88fb4b/edit?invitationId=inv_57b48f0b-83b3-426a-8b8f-4489b60ce293&page=0_0#)
 8. Example of how to call/invoke your API, and a description of what data comes back. The API is very extensive I can get players rank, champions played, previous game results. Also they have proivded a zip file that holds all of the items, champions data
 10. MVP goals (x3-5) To have an app that a player can sign into and save faviort champs, items and summoners. Then the two features will be a user can place items onto champs and get the stats back with the new items on the champion. Also what to allow user to check on summors ranks and match history
