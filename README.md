@@ -10,30 +10,18 @@ In your second project you will create a full stack Express and Postgres app whi
 - *An Express server utilizing EJS/EJS layouts for UI design and styling.*
 - *Interaction with and inclusion of at least one API.*
 
-## Project 2 Pitch Guidelines
-
-In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
-2. Tech stack you plan to use
-3. Simple wireframes
-     * Can be handdrawn, or with tool of your choice
-     * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
-6. ERD
-7. Example of how to call/invoke your API, and a description of what data comes back. 
-8. MVP goals (x3-5)
+Transliterary
+Express, EJS, Sequelize, Postgres
+Papago translation API
+API invocation is any block of text that you wish to translate as well as a selected language you wish to translate to
+MVP goals
+-submit a block of text in any language
+-select a language to translate into
+-create a post in the original and translated language
 9. Stretch goals (x2-5)
-10. Any potential roadblocks?
+-Link another api that parses text from a pdf file or a menu and provides a usable translation. I.E. a menu translated from english to Korean or Chinese. 
 
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart.
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
+
       
 
 
