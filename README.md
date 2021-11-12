@@ -5,14 +5,14 @@ The Angler's Choice for Tracking Catches, Weather, and Conditions
 Postgres, Express, Node, Sequelize, EJS, Bootstrap
 
 ## Wireframes
-!(https://i.imgur.com/nqoONfI.png)
-!(https://i.imgur.com/YScxCud.png)
-!(https://i.imgur.com/ViizPVa.png)
-!(https://i.imgur.com/Bk3uJJt.png)
-!(https://i.imgur.com/GimMLii.png)
-!(https://i.imgur.com/xbO2t7D.png)
-!(https://i.imgur.com/Ualnssn.png)
-!(https://i.imgur.com/S0NNmGI.png)
+![Landing](https://i.imgur.com/nqoONfI.png)
+![Dashboard](https://i.imgur.com/YScxCud.png)
+![Add Stream](https://i.imgur.com/ViizPVa.png)
+![Streams Display](https://i.imgur.com/Bk3uJJt.png)
+![Add Trip](https://i.imgur.com/GimMLii.png)
+![Display Individual Trip](https://i.imgur.com/xbO2t7D.png)
+![Journal Display](https://i.imgur.com/Ualnssn.png)
+![Add A Fish](https://i.imgur.com/S0NNmGI.png)
 
 ## APIS
 United States Geological Service Water Services API and Weather API
