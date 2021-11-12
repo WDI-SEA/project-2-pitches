@@ -27,7 +27,7 @@ show detailed information on the top rated landmarks and restaurants to visit.
 ## MVP
 + create a page where  user is able to search for travel destinations using the search bar 
 + create an attractions page list for the chosen destination
-+ Attractions page will render city name, 4-5 recommended landmarks, 4-5 highest rated restaurants/food places to go
++ Attractions page will render city name, recommend 4-5 landmarks,  recommend 4-5 highest rated restaurants/food places to go
 + create detailed pages for selected landmarks or restaurants 
 + create links to go back to the  home page, attractions page.
 
