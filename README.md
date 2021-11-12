@@ -19,7 +19,7 @@ Particularly fond of the music scene from 2009? Or 1987? Revisit an entire past 
 
 ## Tech stack
 
-Postgres, Express
+HTML, CSS, JavaScript, PostgreSQL, Sequelize, Express, Node, EJS
 
 ## Wireframes
 
