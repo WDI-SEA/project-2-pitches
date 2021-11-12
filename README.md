@@ -20,11 +20,11 @@ In designing and building your project, you will start by forking and cloneing t
 3. Simple wireframes
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
-          * https://miro.com/app/board/o9J_ljjXOJQ=/?invite_link_id=730256206192
+          * https://miro.com/app/board/o9J_ljjXOJQ=/?invite_link_id=530721407780
 5. API you plan to use
      * SWAPI - https://swapi.dev/
 6. ERD
-     * https://lucid.app/documents/view/1af537a3-eecb-4200-a352-904c3a07e3d9
+     * https://lucid.app/lucidchart/1af537a3-eecb-4200-a352-904c3a07e3d9/edit?viewport_loc=-145%2C-184%2C3064%2C1588%2C0_0&invitationId=inv_1b5afbdf-3cf4-43ca-9d0c-ba5f625f20a1
 7. Example of how to call/invoke your API, and a description of what data comes back.
      * https://swapi.dev/api/people || planets || starships/:id -- json data
 8. MVP goals (x3-5)
