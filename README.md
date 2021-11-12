@@ -1,6 +1,6 @@
 1. Unnamed anime list
    
- 1. Tech stack: HTML, CSS, Javascript, PostgreSQL, Sequelize, Express, Node, EJS
+ 1. Tech stack: Javascript, PostgreSQL, Sequelize, Express, Node, EJS
    
 2. Wireframe: ![animeList](https://user-images.githubusercontent.com/91760331/141506170-654626cd-ef26-41a9-9fae-126d5a9e5e50.png)
    
