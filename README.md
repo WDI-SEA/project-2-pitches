@@ -1,41 +1,42 @@
-# Project 2 Pitch Guidelines
-Project Description and Pitch Guidelines for SEIR SEA P2
+# Thrifted
+Thrifted is a plus-sized focused platform that enables users to buy and sell second-hand clothing.
 
 ---
-## Project 2 Goals
-
-In your second project you will create a full stack Express and Postgres app which has:
-- *At least x2 models, and utilize and build at least one relationship between the two models.*
-- *Sequelize as an ORM to interact with and create your database.*
-- *An Express server utilizing EJS/EJS layouts for UI design and styling.*
-- *Interaction with and inclusion of at least one API.*
-
-## Project 2 Pitch Guidelines
-
-In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
-2. Tech stack you plan to use
-3. Simple wireframes
-     * Can be handdrawn, or with tool of your choice
-     * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
-6. ERD
-7. Example of how to call/invoke your API, and a description of what data comes back. 
-8. MVP goals (x3-5)
-9. Stretch goals (x2-5)
-10. Any potential roadblocks?
-
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart.
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
-      
+## Tech Stack
+The thrifted app will be built with the PEN stack: PotgresSQL, Express, and Node.JS.
 
 
+## Wireframes
+
+![Homepage](./frames/home.png)
+![Shop](./frames/shop.png)
+![SignUp](./frames/signUp.png)
+![Sell](./frames/sell.png)
+
+## API 
+Thrifted will utilize cloudinary's [upload API](https://cloudinary.com/documentation/image_upload_api_reference) to generate url's that host the images for items in the Thrifted store.
+
+## ERD
+![ERD](./ERD.png)
+
+## API Invocation
+![index.js](./apiInvocation.png)
+Using the uploader function from cloudinary's node package, I am able to send a local photo to be uploaded and hosted at a unique url through cloudinary.
+## API Response
+![api](./apiResponse.png)
+When the API is invoked with the upload function, it returns a JSON object containing the url that will be used to render photos of items in the Thrifted store.
+
+## MVP Goals
+* Users browse an index of items which they can add and remove from their cart
+*  Users can create new items and "sell" by adding them to their store
+* Users can attach an image to the items that they add
+* Users can delete items from their store (removed from their store AND the items db)
+## Stretch Goals
+* Utilize cloudinary's upload widget Api
+* Users can filter by size when browsing the index of items
+* Users can add multiple photos when creating an item
+
+## Potential Roadblocks
+I believe the photos will prove to be the most difficault part of using this app. For one, photos taken on an iPhone are often stored as .heic files and I am unsure if this API can handle photo's that arent in the .jpeg or .png format. Additionally, users may try to upload photos with a plethora of unique proportions and dimensions. Trying to render this photos cleanly on the webpage could be challenging.
 
 
