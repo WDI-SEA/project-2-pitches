@@ -1,41 +1,77 @@
-# Project 2 Pitch Guidelines
-Project Description and Pitch Guidelines for SEIR SEA P2
+# Unnamed digital "cookbook" app
+
+My favorite cookbooks have always been the ones that marry really great recipes, with even better stories. What I'm hoping to do with this app is give users the opportunity to be the author of their own cookbooks and share that with friends and family. 
+
+## Tech Stack
+
+* HTML5, CSS, JavaScript, Bulma to aid in styling
+
+ * Node.js PostgreSQL, Sequelize, Express, EJS
+
+ ## API
+
+ --- 
+
+I will be using the 'Random Facts API' to pull random facts about food and display them on the main page. Example of use case
+
+     GET /fact/random
+
+     curl -X GET "http://api.fungenerators.com/fact/random?category=Food" -H  "accept: application/json" -H  "X-Fungenerators-Api-Secret: api_key"
+
+Output:
+
+     {
+       "success": {
+         "total": 1
+       },
+       "contents": {
+         "fact": "The most iconic donut shop in   Hollywood is Randy's Donuts. It has appeared   in many movies including Crocodile Dundee      and Iron Man 2.",
+         "id": "VbUC4jKvaxzHNgs2FRUthweF",
+         "category": "Food ",
+         "subcategory": "Donuts "
+       }
+     }
+
+     
+
+
+
+## User Stories
+---
+
+* I want to be able to not only store my recipes, but share why a recipe is important to me, or share a fun anecdote related to it
+
+* I want to be able to save my recipes in collections so that I can stay organized and easily share them with friends and family. 
+
+* I want to find fun recipes and be able to leave comments so the creator can know how much I enjoy them 
+
+## Wireframe
+
+<img src="wireframe1.png">
+<img src="wireframe2.png">
+
+
+## ERD
+---
+<img src="ERD.png">
 
 ---
-## Project 2 Goals
-
-In your second project you will create a full stack Express and Postgres app which has:
-- *At least x2 models, and utilize and build at least one relationship between the two models.*
-- *Sequelize as an ORM to interact with and create your database.*
-- *An Express server utilizing EJS/EJS layouts for UI design and styling.*
-- *Interaction with and inclusion of at least one API.*
-
-## Project 2 Pitch Guidelines
-
-In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
-2. Tech stack you plan to use
-3. Simple wireframes
-     * Can be handdrawn, or with tool of your choice
-     * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
-6. ERD
-7. Example of how to call/invoke your API, and a description of what data comes back. 
-8. MVP goals (x3-5)
-9. Stretch goals (x2-5)
-10. Any potential roadblocks?
-
-## How to get started
-1. **Fork and clone this repository.**
-2. **Edit the text above to include specifics of your project.**
-3. **Commit, push, and submit a pull request to this repo with your edited pitch README.**
-4. *After you have met with a staff member and your pitch has been approved, suggested next steps:*
-      * Write out your routes and create a RESTful routing chart.
-      * Come up with a breakdown of what you plan to accomplish each day and how you are going to accomplish it.
-      * Create a new git repo for your project. 
-      * Make all test API calls you need to to ensure your API will be usable for this project. 
-      
 
 
+## MVP GOALS
+
+1. Users can upload recipes and include a quick story on what makes this recipe special to them
+
+2. Users create collections of their recipes (i.e. Grandmas Thanksgiving recipes) for easier sharing and organizing 
+
+3. Users can comment on individual recipes 
+
+4. Recipes are searchable
+
+## STRETCH GOALS
+
+1. Intergrate (or make) an ingredient parser so ingredients can be entered as strings and broken down into units and ingredients 
+
+2. Intergrate social media like features such as following an author, creating groups, and messaging 
 
 
