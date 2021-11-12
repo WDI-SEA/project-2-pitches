@@ -128,7 +128,7 @@ The Spotify Web API uses REST principles to return JSON metadata from the Spotif
 
 ### Stretch goals
 
-- create ejs page that includes additional information about each album, besides just album name and release year
+- instead of grabbing entire album, grab most popular song from album (this is part of GET track operation)
 - explore including a "play" link or option (not sure how this works within the API, so I need to do more research)
 
 ## Potential roadblocks
