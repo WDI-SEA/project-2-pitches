@@ -16,18 +16,18 @@ In designing and building your project, you will start by forking and cloneing t
 1. Name of your app
 Food logger
 2. Tech stack you plan to use
-Javascript is the main thing that will be used to create and build the app. Possibly css for styling at a later time.
+**Javascript is the main thing that will be used to create and build the app. Possibly css for styling at a later time.
 3. Simple wireframes
-Lucid will be used to create wireframes
+**Lucid will be used to create wireframes
 5. API you plan to use
-Zomato and Nutritionix
+**Zomato and Nutritionix
 6. ERD![Blank diagram (2)](https://user-images.githubusercontent.com/91762173/141539960-2518f3c0-bdb1-43bd-80fa-77234a3c928e.jpeg)
 7. Example of how to call/invoke your API, and a description of what data comes back.
-While there are a few ways of invoking an API, I MIGHT sitck to using AXIOS.
+**While there are a few ways of invoking an API, I MIGHT sitck to using AXIOS.
 8. MVP goals (x3-5)
-Main goal at the moment will be to have the user log the food that was consumed by type of food and the time (breakfast, lunch, dinner). API will be used mainly for time logging.
+**Main goal at the moment will be to have the user log the food that was consumed by type of food and the time (breakfast, lunch, dinner). API will be used mainly for time logging.
 9. Stretch goals (x2-5)
-Make user profiles, add images.
+**Make user profiles, add images.
 10. Any potential roadblocks?
 
 ## How to get started
