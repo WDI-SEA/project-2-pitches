@@ -14,8 +14,9 @@ In your second project you will create a full stack Express and Postgres app whi
 
 In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
 1. LOL-builder-tracker
-2. ![image](https://user-images.githubusercontent.com/65565104/141505595-c0b3d33c-be08-4b43-92f1-c99c29d354ac.png)
-3. Simple wireframes
+2. Tech stack
+  ![image](https://user-images.githubusercontent.com/65565104/141505595-c0b3d33c-be08-4b43-92f1-c99c29d354ac.png)
+4. Simple wireframes
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
 5. API you plan to use
