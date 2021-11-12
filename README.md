@@ -47,7 +47,10 @@ API root = https://wger.de/api/v2/<:param>/?language=2
 ## MVP
 * Welcome page that renders login/sign up
 * User profile page that displays basic user info, favorited exercises, and exercises user saved for next workout
-* 
+* Categorize save for next workout list by muscle group
+* User will be able to search for exercises with option to add to two lists:
+     1. favorite exercises
+     2. save for next workout
 
 ## Stretch Goals
 * Use a second API to call for inspirational fitness quotes
@@ -58,3 +61,4 @@ API root = https://wger.de/api/v2/<:param>/?language=2
 ## Potential Roadblocks
 * Some of the data returned might be in German
 * Narrowing down what to search by
+* Keeping with one idea
