@@ -87,7 +87,7 @@ Here is a sample object, truncated for brevity. Note that images are retrieved i
 Modals will be used to add and edit gift recipients and holidays.
 
 ## ERD
-![Image](./Project-2-ERD.png)
+![ERD](./project-2-ERD.png)
 The initial product may not include the stores table, in which case, the app will be restricted to products from Etsy.
 
 ## MVP Goals
