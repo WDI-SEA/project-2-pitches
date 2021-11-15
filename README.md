@@ -13,17 +13,23 @@ In your second project you will create a full stack Express and Postgres app whi
 ## Project 2 Pitch Guidelines
 
 In designing and building your project, you will start by forking and cloneing this repository, and then editing this README to include the following information: 
-1. Name of your app
-2. Tech stack you plan to use
+1. Music and mood generator 
+2. HTML,CSS,Javascript, Node, Express
 3. Simple wireframes
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
-5. API you plan to use
+5. Music api
 6. ERD
 7. Example of how to call/invoke your API, and a description of what data comes back. 
-8. MVP goals (x3-5)
-9. Stretch goals (x2-5)
-10. Any potential roadblocks?
+8. MVP goals 
+     - Have it register mood and genre
+     - Have it return a list of songs
+     - 
+9. Stretch goals: 
+     - Add a mood API to the project
+     - Add a time stamp api 
+     - 
+10. Nothing at the moment
 
 ## How to get started
 1. **Fork and clone this repository.**
