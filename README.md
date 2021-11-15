@@ -18,8 +18,10 @@ In designing and building your project, you will start by forking and cloneing t
 3. Simple wireframes
      * Can be handdrawn, or with tool of your choice
      * Example online tool: [Miro.com](https://miro.com/)
-5. Music api
-6. ERD
+5. music api (audiodb) 
+     https://theaudiodb.com/
+6. ![Justin ERD.pdf](https://github.com/WDI-SEA/project-2-pitches/files/7539997/Justin.ERD.pdf)
+
 7. Example of how to call/invoke your API, and a description of what data comes back. 
 8. MVP goals 
      - Have it register mood and genre
